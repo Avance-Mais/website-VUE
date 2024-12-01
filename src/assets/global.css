@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=MedievalSharp&display=swap");
+
+:root {
+  --cor-primaria: #42d392;
+  --cor-sobre: #50b1be;
+  --cor-oposta: #6088f3;
+  --cor-escura: #213547;
+  --cor-clara: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+}
+
+li {
+  list-style-type: none;
+}
+
+.label-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-input > input {
+  border: var(--cor-primaria) 1px solid;
+  padding: 0.5rem 1rem;
+  width: 321px;
+  border-radius: 100px;
+}
+
+input:focus {
+  border: var(--cor-escura) 1px solid;
+  outline: none;
+}
+
+
+.submit{
+    background-color: var(--cor-primaria);
+    border: 0;
+    padding: 1rem;
+    color: var(--cor-clara);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+a{
+    color: var(--cor-escura);
+    text-decoration: none;
+}
