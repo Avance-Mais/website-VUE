@@ -6,5 +6,6 @@ services:
     buildCommand: npm run build
     startCommand: npx serve -s dist -l $PORT
     routes:
-      - source: "/*"
+      - type: redirect
+        source: "/*"
         destination: "/index.html"
