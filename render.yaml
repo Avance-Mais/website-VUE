@@ -7,5 +7,5 @@ services:
     startCommand: npx serve -s dist -l $PORT
     routes:
       - type: rewrite
-        source: "/*"
-        destination: "/index.html"
+        source: /*
+        destination: /index.html
