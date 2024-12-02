@@ -1,9 +1,10 @@
+version: 1
 services:
   - type: web
     name: vue-app
     env: node
     buildCommand: npm run build
-    startCommand: serve dist # or serve the `dist/` directory with an HTTP server
+    startCommand: npx serve -s dist
     routes:
       - source: "/*"
-        destination: "/index.html" # Redirect all routes to index.html
+        destination: "/index.html"
