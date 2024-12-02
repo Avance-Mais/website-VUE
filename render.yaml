@@ -2,9 +2,9 @@ version: 1
 services:
   - type: web
     name: vue-app
-    env: node
-    buildCommand: npm run build
-    startCommand: npx serve -s dist -l $PORT
+    env: static
+    buildCommand: npm install && npm run build
+    startCommand: npx serve -s .website-VUE/dist -l $PORT
     routes:
       - type: rewrite
         source: /*
