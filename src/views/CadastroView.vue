@@ -37,7 +37,7 @@ import FooterComponent from "@/components/FooterComponent.vue";
         </div>
         <input type="submit" class="submit" value="Cadastrar" />
       </form>
-      <a href="#">Já possui uma conta?</a>
+      <RouterLink :to="{ name: 'login' }" class="font-white">Ainda não possui uma conta?</RouterLink>
     </main>
 
     <footer>

@@ -5,7 +5,7 @@
     <div class="footer-items">
       <ul>
         <li>
-          <a href="">
+          <a href="https://github.com/Senac-Avance/website-VUE" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
