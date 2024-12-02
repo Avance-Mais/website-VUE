@@ -5,5 +5,5 @@ services:
     buildCommand: npm run build
     startCommand: npm run start # or serve the `dist/` directory with an HTTP server
     routes:
-      - source: "/.*"
+      - source: "/*"
         destination: "/index.html" # Redirect all routes to index.html
