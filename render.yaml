@@ -4,7 +4,7 @@ services:
     name: vue-app
     env: static
     buildCommand: npm install && npm run build
-    startCommand: npx serve -s .website-VUE/dist -l $PORT
+    startCommand: npx serve -s dist -l $PORT
     routes:
       - type: rewrite
         source: /*
