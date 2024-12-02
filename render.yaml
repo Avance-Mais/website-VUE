@@ -4,7 +4,7 @@ services:
     name: vue-app
     env: node
     buildCommand: npm run build
-    startCommand: npx serve -s dist
+    startCommand: npx serve -s dist -l $PORT
     routes:
       - source: "/*"
         destination: "/index.html"
