@@ -24,7 +24,8 @@ li {
   flex-direction: column;
 }
 
-.label-input > input {
+.label-input > input,
+select {
   border: var(--cor-primaria) 1px solid;
   padding: 0.5rem 1rem;
   width: 321px;
@@ -36,17 +37,16 @@ input:focus {
   outline: none;
 }
 
-
-.submit{
-    background-color: var(--cor-primaria);
-    border: 0;
-    padding: 1rem;
-    color: var(--cor-clara);
-    font-weight: bold;
-    font-size: 1.3rem;
+.submit {
+  background-color: var(--cor-primaria);
+  border: 0;
+  padding: 1rem;
+  color: var(--cor-clara);
+  font-weight: bold;
+  font-size: 1.3rem;
 }
 
-a{
-    color: var(--cor-escura);
-    text-decoration: none;
+a {
+  color: var(--cor-escura);
+  text-decoration: none;
 }
