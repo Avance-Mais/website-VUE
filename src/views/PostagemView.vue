@@ -26,12 +26,7 @@ import HeaderComponent from "@/components/HeaderComponent.vue";
           </div>
           <div class="label-input">
             <label for="postagem">Sobre o que você quer falar?</label>
-            <textarea
-              name="post-descricao"
-              id=""
-              rows="14"
-              class="post-descricao"
-            ></textarea>
+            <textarea name="post-descricao" class="post-descricao"></textarea>
           </div>
           <input type="submit" class="submit" value="Publicar" />
         </form>
@@ -63,14 +58,21 @@ form {
   gap: 2rem;
 }
 
+select {
+  background-color: #ffffff;
+}
+
 .post-descricao {
-  height: 20vh;
+  height: 30vh;
   border: var(--cor-primaria) solid 1px;
   border-radius: 12px;
+  padding: 5px;
   resize: none;
 }
 
-select {
-  background-color: #ffffff;
+@media (max-width: 800px) {
+  .post-descricao {
+    height: 45vh;
+  }
 }
 </style>
