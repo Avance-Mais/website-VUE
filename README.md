@@ -26,3 +26,8 @@ Para gerar os arquivos otimizados para produção, utilize:
 ```sh
 npm run build
 ```
+## **linguagens e ferramentas** 
+<br>
+<p align="center">
+    <img src="https://skillicons.dev/icons?i=vscode,vue,typescript,javascript,html,css,vite" />
+</p>
