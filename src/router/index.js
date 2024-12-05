@@ -23,6 +23,11 @@ const router = createRouter({
       name: "postagem",
       component: () => import("../views/PostagemView.vue"),
     },
+    {
+      path: "/postagem_video",
+      name: "postagem_video",
+      component: () => import("../views/PostagemVideoView.vue"),
+    },
   ],
 });
 
