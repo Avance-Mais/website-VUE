@@ -58,6 +58,10 @@ form {
   gap: 2rem;
 }
 
+label {
+  margin-bottom: 1vh;
+}
+
 select {
   background-color: #ffffff;
 }
