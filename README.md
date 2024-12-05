@@ -1,4 +1,4 @@
-![Logo](AVANCE+.png)
+
 
 
 # **Avance+**  
