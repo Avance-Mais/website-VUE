@@ -26,7 +26,6 @@ Para gerar os arquivos otimizados para produção, utilize:
 ```sh
 npm run build
 
-![Logo](AVANCE+.png)
 
 ```
 ## **linguagens e ferramentas** 
