@@ -2,6 +2,16 @@
 import HeaderComponent from "@/components/HeaderComponent.vue";
 import FooterComponent from "@/components/FooterComponent.vue";
 import PostComponent from "@/components/PostComponent.vue";
+import { onMounted, ref } from "vue";
+import axios from "axios";
+
+const posts = ref([]);
+
+onMounted(() => {
+  axios.get("/posts").then((resposta) => {
+    posts.value = resposta.data;
+  });
+});
 </script>
 
 <template>
@@ -21,7 +31,17 @@ import PostComponent from "@/components/PostComponent.vue";
         <p>Facilidade</p>
         <p>Gratuito</p>
       </div>
-      <PostComponent />
+      <div v-if="posts.length > 0">
+        <div v-for="post in posts" :key="post.id">
+          <PostComponent
+            :nome="post.idUsuario"
+            :tema="post.tema"
+            :titulo="post.titulo"
+            :descricao="post.descricao"
+            :link="post.link"
+          />
+        </div>
+      </div>
     </main>
     <footer>
       <FooterComponent />
