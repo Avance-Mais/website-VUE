@@ -6,10 +6,12 @@ import { onMounted, ref } from "vue";
 import axios from "axios";
 
 const posts = ref([]);
+const usuarios = ref([]);
 
 onMounted(() => {
   axios.get("/posts").then((resposta) => {
-    posts.value = resposta.data;
+    posts.value = resposta.data.posts;
+    usuarios.value = resposta.data.usuarios;
   });
 });
 </script>
@@ -32,9 +34,9 @@ onMounted(() => {
         <p>Gratuito</p>
       </div>
       <div v-if="posts.length > 0">
-        <div v-for="post in posts" :key="post.id">
+        <div v-for="(post, index) in posts" :key="post.titulo">
           <PostComponent
-            :nome="post.idUsuario"
+            :nome="usuarios[index]?.nome"
             :tema="post.tema"
             :titulo="post.titulo"
             :descricao="post.descricao"
