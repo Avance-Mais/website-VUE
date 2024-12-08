@@ -9,10 +9,15 @@ const posts = ref([]);
 const usuarios = ref([]);
 
 onMounted(() => {
-  axios.get("/posts").then((resposta) => {
-    posts.value = resposta.data.posts;
-    usuarios.value = resposta.data.usuarios;
-  });
+  axios
+    .get("/posts")
+    .then((resposta) => {
+      posts.value = resposta.data.posts;
+      usuarios.value = resposta.data.usuarios;
+    })
+    .catch((erro) => {
+      console.error("Erro ao obter dados da api:", erro);
+    });
 });
 </script>
 
