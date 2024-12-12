@@ -28,6 +28,11 @@ const router = createRouter({
       name: "postagem_video",
       component: () => import("../views/PostagemVideoView.vue"),
     },
+    {
+      path: "/feed",
+      name: "feed",
+      component: () => import("../views/FeedView.vue"),
+    },
   ],
 });
 
