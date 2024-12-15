@@ -23,6 +23,11 @@ export default defineConfig({
         changeOrigin: true,
         secure: true,
       },
+      "/usuarios": {
+        target: "https://api-avance-plus.onrender.com",
+        changeOrigin: true,
+        secure: true,
+      },
     },
   },
   build: {
