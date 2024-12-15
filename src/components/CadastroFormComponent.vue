@@ -46,6 +46,10 @@ const enviarFormulario = async (evento) => {
 
 <template>
   <div class="form-div">
+    <div class="titulo">
+      <h1>Cadastro</h1>
+      <p>Avance+</p>
+    </div>
     <form @submit.prevent="enviarFormulario">
       <div class="label-input">
         <label for="nome">Nome Completo</label>
@@ -135,6 +139,12 @@ const enviarFormulario = async (evento) => {
 </template>
 
 <style scoped>
+.titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .form-div {
   flex: 1;
   display: flex;

@@ -6,10 +6,6 @@ import CadastroFormComponent from "@/components/CadastroFormComponent.vue";
 <template>
   <div class="layout">
     <main class="main">
-      <div class="titulo">
-        <h1>Cadastro</h1>
-        <p>Avance+</p>
-      </div>
       <CadastroFormComponent />
     </main>
 
@@ -33,11 +29,5 @@ import CadastroFormComponent from "@/components/CadastroFormComponent.vue";
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-}
-
-.titulo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 </style>
