@@ -99,14 +99,14 @@ const enviarFormulario = async (evento) => {
         As senhas não coincidem!
       </p>
       <div class="label-input">
-        <label for="professor">Você é um(a) Professor(a)?</label>
+        <label for="tipo">Você é um(a) Professor(a)?</label>
         <div class="escolha-tipo">
           <input
             type="radio"
             name="tipo"
             id="professor"
             v-model="tipo"
-            value="tipo"
+            value="Professor"
             required
             :disabled="carregando"
           />
