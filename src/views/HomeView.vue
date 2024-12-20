@@ -8,6 +8,14 @@ import axios from "axios";
 const posts = ref([]);
 const usuarios = ref([]);
 
+axios.get("/status").then((resposta) => {
+  console.log("Status: ",resposta.data.status);
+  console.log("code: ", resposta.data.code);
+  console.log("mensagem: ",resposta.data.mensagem);
+}).catch((erro) => {
+  console.error("Erro ao obter status da api:", erro);
+});
+
 onMounted(() => {
   axios
     .get("/posts")
