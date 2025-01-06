@@ -14,17 +14,17 @@ export default defineConfig({
     host: true,
     proxy: {
       "/posts": {
-        target: "https://api-avance-plus.onrender.com",
+        target: "https://avance-mais-api.onrender.com",
         changeOrigin: true,
         secure: true,
       },
       "/status": {
-        target: "https://api-avance-plus.onrender.com",
+        target: "https://avance-mais-api.onrender.com",
         changeOrigin: true,
         secure: true,
       },
       "/usuarios": {
-        target: "https://api-avance-plus.onrender.com",
+        target: "https://avance-mais-api.onrender.com",
         changeOrigin: true,
         secure: true,
       },
